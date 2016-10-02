@@ -58,8 +58,10 @@ on init
     
 
     # Enable panic on out of memory
-    
 
+    # Set vibration control
+    write /sys/class/timed_output/vibrator/vtg_level 23
+    
     #Configure Zram.
     write /proc/sys/vm/swappiness 100
 
